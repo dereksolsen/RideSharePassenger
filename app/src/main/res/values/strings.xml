@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Longville RideShare Passenger</string>
+    <string name="signIn">Sign in</string>z
+    <string name="cancel_button">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="pick_up_location">Pick up location:</string>
+    <string name="drop_off_location">Drop off location:</string>
+    <string name="riderTime">When do you need to be there?</string>
+    <string name="submitRequest">Submit Request</string>
+    <string name="button_Date">Date</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="date_picker_title">Date:</string>
+    <string name="pwd">Password</string>
+    <string name="email">Email address</string>
+    <string name="locations">Choose pick up and drop off location</string>
+    <string name="enter_address">Enter Address, City or Zip Code</string>
+    <string name="textView_connecting">Connecting ...</string>
+    <string name="channel_name">Main channel</string>
+    <string name="channel_description">Channel for notifications.</string>
+    <string name="server_addr">https://apps.ericvillnow.com/rideshare</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <dimen name="recycler_section_header_height">36dp</dimen>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cancelRequest">Cancel Request</string>
+    <string name="riderEstTime">How long will you be there?</string>
+
+    <string name="google_maps_key">AIzaSyAefQArjnf5orqkbWJj7aXTzAxES_YVErM</string>
+
+    <string name="about">Welcome to the Longville RideShare Passenger (LRSP) application. This is a platform that you can use to request and get a free ride in your community.\n\n App version: 1.0.0</string>
+
+
+</resources>

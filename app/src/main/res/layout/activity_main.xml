@@ -1,0 +1,116 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fallntic.ridesharepassenger.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp">
+
+            <TextView
+                android:id="@+id/signIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longville Ride Share Client"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bsu_logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/signIn"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bsu_logo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="46dp"
+                android:focusable="true"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email" />
+
+
+            <EditText
+                android:id="@+id/editText_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_email"
+                android:layout_alignEnd="@+id/editText_email"
+                android:layout_alignRight="@+id/editText_email"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:hint="@string/pwd"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/submit_button_signIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_pwd"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_button_save"
+                android:padding="7dp"
+                android:text="@string/signIn"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="UnknownId" />
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/submit_button_signIn"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/rounded_button_cancel"
+                android:padding="7dp"
+                android:text="@string/cancel_button"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="UnknownId" />
+
+            <TextView
+                android:id="@+id/signing_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bsu_logo"
+                android:text="@string/textView_connecting"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/signing_in"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorPrimaryDark"
+                tools:ignore="UnknownId" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
